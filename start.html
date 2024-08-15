@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="start.css">
+
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+      <!-- font-awesome -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      <!-- greensock -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+      <div class="overlay">
+            <h1>HI THERE :)</h1>
+      </div>
+
+      <div class="wrapper">
+            <div class="logo">TVA</div>
+            
+            <div class="social-media">
+                  <ul>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                  </ul>
+            </div>
+            <div class="side-strip">
+                  <span>COUNTDOWN TIMER</span>
+            </div>
+            <div class="header">
+                  <h1>TIME - The element <br> of nature</h1>
+                  <p>What is time?You may ask,but basically- Time can be considered to be the fourth dimension of reality, used to describe events in three dimensional space. Pretty scientific?</p>
+                  <a href="home.html">
+                  <button>EXPLORE</button>
+                  
+            </div>
+            <div class="bottom-bar">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-4">
+                                    <h6>Countdown Timer.</h6>
+                                    <p>When a Stopwatch just will not do! This Online countdown is very easy to use and convinient!</p>
+                              </div>
+                              <div class="col-lg-4">
+                                    <h6>Stopwatch.</h6>
+                                    <p>Use this online stopwatch to measure elapsed time, start and stop, and save your timings in a text file!</p>
+                              </div>
+                              <div class="col-lg-4">
+                                    <h6>Alarm clock.</h6>
+                                    <p>Use the online alarm clock to set the hour and minute, choose a sound, and preview the alert!</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".logo", 1, {
+            delay: 2.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom(".nav ul li", 1, {
+            delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+      }, 0.2)
+
+      TweenMax.staggerFrom(".social-media ul li", 1, {
+            delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+      }, 0.2)
+
+      TweenMax.from(".side-strip", 2, {
+            delay: 2.4,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".row", 2, {
+            delay: 2.4,
+            opacity: 0,
+            x: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".row h6", 2, {
+            delay: 3,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".row p", 2, {
+            delay: 3.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header h1", 2, {
+            delay: 3.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header p", 2, {
+            delay: 3.4,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".header button", 2, {
+            delay: 3.6,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      })
+      </script>
+</body>
+</html>

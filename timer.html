@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+body {
+    font-family: 'Red Hat Text', sans-serif;
+}
+.nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to top, hsl(236, 21%, 26%), hsl(235, 16%, 14%), hsl(234, 17%, 12%));
+}
+
+.parent .soon {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2000;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.parent .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.parent .container>div {
+    text-align: center;
+}
+
+.parent .container span {
+    color: hsl(345, 95%, 68%);
+    font-weight: bold;
+    padding: 10px;
+    display: inline-flex;
+    background-image: linear-gradient(to top, hsl(236, 21%, 26%), hsl(234, 17%, 12%));
+    height: 90px;
+    width: 95px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    position: relative;
+    font-size: 35px;
+    box-shadow: 0 5px 0px 0 hsl(234, 17%, 12%);
+    border-radius: 10px;
+}
+
+@media (max-width:767px) {
+    .parent .container span {
+        width: 70px;
+        height: 70px;
+        font-size: 25px;
+    }
+}
+
+.parent .container span::before,
+.parent .container span::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    background: hsl(234, 17%, 12%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.parent .container span::before {
+    left: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.parent .container span::after {
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.parent .container .name {
+    color: hsl(237, 18%, 59%);
+    margin-top: 10px;
+}
+
+.social {
+    position: absolute;
+    bottom: 30px;
+    z-index: 3000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social a {
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.social a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social a:hover img {
+    filter: brightness(0.8);
+}
+
+.stars {
+    max-width: 100%;
+    position: absolute;
+}
+
+.hills {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .hills {
+        width: unset;
+        height: 20%;
+    }
+}
+
+    body {
+      font-family: 'Red Hat Text', sans-serif;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    label {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: hsl(345, 95%, 68%);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: hsl(345, 85%, 60%);
+    }
+  </style>
+  <link href="home.css" rel="stylesheet">
+</head>
+
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">Abouts us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="parent">
+        <h1 class="soon">
+          Countdown Timer
+        </h1>
+        <div class="container">
+          <div class="days">
+            <span>00</span>
+            <div class="name">Days</div>
+          </div>
+          <div class="hours">
+            <span>00</span>
+            <div class="name">Hours</div>
+          </div>
+          <div class="minutes">
+            <span>00</span>
+            <div class="name">Minutes</div>
+          </div>
+          <div class="seconds">
+            <span>00</span>
+            <div class="name">Seconds</div>
+          </div>
+        </div>
+       
+        <img class="stars" src="bg-stars.svg" alt="">
+        <img class="hills" src="pattern-hills.svg" alt="">
+          <!-- User input form -->
+          <form id="countdownForm">
+            <label for="endDate">Enter end date and time:</label>
+            <input type="datetime-local" id="endDate" name="endDate" required>
+            <button type="submit">Start Countdown</button>
+          </form>
+      </div>
+    
+      
+    
+
+  
+  <script>
+          const countdownForm = document.getElementById('countdownForm');
+      const daysContainer = document.querySelector('.days span');
+      const hoursContainer = document.querySelector('.hours span');
+      const minutesContainer = document.querySelector('.minutes span');
+      const secondsContainer = document.querySelector('.seconds span');
+      let end;
+
+      countdownForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        end = new Date(document.getElementById('endDate').value).getTime();
+        startTimer();
+      });
+
+      function startTimer() {
+        const timer = setInterval(() => {
+          const start = new Date().getTime();
+          const diffDate = end - start;
+          const days = Math.floor(diffDate / 1000 / 60 / 60 / 24);
+          daysContainer.innerHTML = days >= 10 ? days : `0${days}`;
+          const hours = Math.floor(diffDate % (1000 * 60 * 60 * 24) / 1000 / 60 / 60);
+          hoursContainer.innerHTML = hours >= 10 ? hours : `0${hours}`;
+          const minutes = Math.floor(diffDate % (1000 * 60 * 60) / 1000 / 60);
+          minutesContainer.innerHTML = minutes >= 10 ? minutes : `0${minutes}`;
+          const seconds = Math.floor(diffDate % (1000 * 60) / 1000);
+          secondsContainer.innerHTML = seconds >= 10 ? seconds : `0${seconds}`;
+          if (diffDate <= 0) {
+            daysContainer.innerHTML = `00`;
+            hoursContainer.innerHTML = `00`;
+            minutesContainer.innerHTML = `00`;
+            secondsContainer.innerHTML = `00`;
+            clearInterval(timer);
+          }
+        }, 1000);
+      }
+  </script>
+</body>
+
+</html>
+

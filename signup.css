@@ -1,0 +1,166 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto',sans-serif;
+	background: linear-gradient(90deg, rgba(230,126,34,1) 20%, rgba(243,156,18,1) 61%, rgba(241,196,15,1) 94%);
+}
+main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button{
+	color: pink;
+	font-size: larger;
+	
+}
+.login{
+	font-size: 20px;
+	color:palevioletred;
+}
+.custom{
+	margin-bottom: 50px;
+}
+.container{
+	width:80px;
+	height: 90px;
+	margin-bottom: 25%;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: "left right";
+}
+.left-side{
+	height: 100%;
+	grid-template-areas: left;
+	background-image: url('1.png');
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.right-side{
+	grid-template-areas: right;
+	background-color:rgb(231,231,231);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	margin-top: 0px;
+	width: 70%;
+	color:#f29c12;
+}
+.slogan{
+	width: 70%;
+	margin-top: 5%;
+}
+.slogan p{
+	font-size: 34px;
+color:#ecf0f1;
+width: 75%;
+}
+.btn-group{
+	width: 150px;
+	padding:10px 10px;
+	background-color:#ecf0f1;
+	border-radius: 3px;
+}
+.slogan .btn{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: black;
+	font-size: 16px;
+	margin-right: 10px;
+
+}
+.footer{
+	width: 80%;
+	color:#f39c12;
+	display: flex;
+	margin-bottom: 100px;
+}
+.footer span{
+	margin-left: 20px;
+}
+.icon{
+	margin-top: 20px;
+	width: 70%;
+	color: #2e2e2e;
+	text-align: right;
+}
+.form{
+	width: 80%;
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 200px;
+	
+}
+.form p{
+	color:rgb(63, 63, 63);
+	font-size: 45px;
+	margin-bottom: 45px;
+}
+
+.about{
+	color:rgb(241, 176, 55);
+}
+.form-group{
+	margin-bottom: 10px;
+	border-bottom: 1px solid gray;
+	font-size: 20px;
+}
+.form-group input{
+	background: transparent;
+	border: none;
+	outline: none;
+	padding: 10px 10px;
+}
+.form-group i{
+	margin-left:20px;
+}
+.row{
+	display: flex;
+	margin-top: 25px;
+}
+.btn-group2{
+	width: 150px;
+	padding:10px 10px;
+	background-color:#040404;
+	border-radius: 3px;
+}
+.btn-group2 .btn{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: rgb(62, 62, 62);
+	font-size: 26px;
+	margin-right: 56px;
+	padding-left: 40%;
+	
+}
+.btn-group2 span{
+margin-left: -30%;
+color: black;
+}
+.btn span{
+	color: rgb(100, 98, 98);
+}
+.lr{
+	display: flex;
+	justify-content: center;
+	font-size: 10px;
+	align-items: center;
+	margin-left: 15px;
+	color:rgb(172,172,172);
+}
+.lr span{
+	border-bottom: 1px solid rgb(172,172,172);
+}
